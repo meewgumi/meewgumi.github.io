@@ -1,0 +1,72 @@
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: franklin-gothic-urw, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    line-height: 1rem;
+}
+
+.header {
+	font-family: Karla-Regular;
+	color: #FFFFFF;
+}
+
+.header__logo
+
+.header__nav  {
+font-size: 24px;
+line-height: 28px;
+}
+
+.header__text {
+		text-align: center;
+}
+
+
+.header--h1 {
+font-family: franklin-gothic-urw;
+	font-weight: 400;
+font-size: 72px;
+line-height: 82px;
+}
+
+.header--h2 {
+font-size: 32px;
+line-height: 37px;
+	text-align: center;
+}
+
+
+.header--background
+
+.content {
+	font-family: franklin-gothic-urw;
+	font-weight: 400;
+}
+
+
+.content__text {
+	font-size: 23px;
+color: #030303;
+line-height: 33px;
+}
+
+.content--h1 {
+	font-weight: 500;
+font-size: 52px;
+color: #030303;
+line-height: 59px;
+}
+
+.content--h2 {
+	font-weight: 500;
+	font-size: 36px;
+color: #030303;
+line-height: 41px;
+}
