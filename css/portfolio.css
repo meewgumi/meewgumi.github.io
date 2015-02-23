@@ -20,7 +20,11 @@ body {
 }
 
 .header__logo {
-	
+	width: 10rem;
+}
+
+.header__logo-svg path {
+    fill: #ffffff;
 }
 
 .header__nav {
@@ -30,7 +34,7 @@ margin: 0 auto;
 
 .header__links  {
 float: right;
-font-size: 18px;
+font-size: 16px;
 line-height: 28px;
 list-style-type: none;
 margin-top: 2rem;
