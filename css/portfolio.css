@@ -9,6 +9,7 @@
 }
 body {
     font-family: franklin-gothic-urw, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	 -webkit-font-smoothing: antialiased;
     font-weight: 400;
     line-height: 125%;
 }
@@ -32,11 +33,16 @@ float: right;
 font-size: 18px;
 line-height: 28px;
 list-style-type: none;
-
+margin-top: 2rem;
 }
 
 .header__links li {
 	display: inline;
+	margin-right: 1.5rem;
+}
+
+.header__links li:last-child {
+	margin-right: 0;
 }
 
 .header__links a {
@@ -49,7 +55,7 @@ list-style-type: none;
 margin: 0 auto;
 	text-align: center;
 	clear: both;
-	padding: 8rem 0 0 0;
+	padding: 7rem 0 0 0;
 }
 
 
@@ -62,8 +68,9 @@ line-height: 78px;
 }
 
 .header--h2 {
-font-size: 32px;
-line-height: 37px;
+font-size: 24px;
+line-height: 50px;
+font-weight: normal;
 }
 
 
