@@ -1,108 +1,94 @@
 *,
 *:before,
 *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 body {
-    font-family: franklin-gothic-urw, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	 -webkit-font-smoothing: antialiased;
-    font-weight: 400;
-    line-height: 125%;
+	font-family: "franklin-gothic-urw", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+	line-height: 125%;
 }
-
 .header {
 	font-family: 'Karla';
 	color: #FFFFFF;
 }
-
 .header__logo {
 	width: 10rem;
+	float: left;
 }
-
 .header__logo-svg path {
-    fill: #ffffff;
+	fill: #ffffff;
 }
-
 .header__nav {
 	width: 80%;
-margin: 0 auto;
+	margin: 0 auto;
+	padding-top: 2rem;
 }
-
-.header__links  {
-float: right;
-font-size: 16px;
-line-height: 28px;
-list-style-type: none;
-margin-top: 2rem;
+.header__links {
+	float: right;
+	font-size: 16px;
+	line-height: 28px;
+	list-style-type: none;
 }
-
 .header__links li {
 	display: inline;
 	margin-right: 1.5rem;
 }
-
 .header__links li:last-child {
 	margin-right: 0;
 }
-
 .header__links a {
 	text-decoration: none;
 	color: #ffffff;
 }
-
 .header__text {
 	width: 80%;
-margin: 0 auto;
+	margin: 0 auto;
 	text-align: center;
 	clear: both;
 	padding: 7rem 0 0 0;
 }
-
-
 .header--h1 {
-font-family: franklin-gothic-urw;
+	font-family: "franklin-gothic-urw", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 400;
-font-size: 72px;
-line-height: 78px;
-		margin: 0 0 0 0;
+	font-size: 72px;
+	line-height: 78px;
+	margin: 0 0 0 0;
 }
-
 .header--h2 {
-font-size: 24px;
-line-height: 50px;
-font-weight: normal;
+	font-size: 24px;
+	line-height: 50px;
+	font-weight: normal;
 }
-
-
 .header--background {
 	height: 25rem;
 	background-color: #6eb4b7;
 }
-
 .content {
-	font-family: franklin-gothic-urw;
+	font-family: "franklin-gothic-urw", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 400;
 	color: #030303;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 3rem;
 }
-
-
 .content__text {
 	font-size: 23px;
-line-height: 33px;
+	line-height: 33px;
 }
-
 .content--h1 {
 	font-weight: 500;
-font-size: 52px;
-line-height: 59px;
+	font-size: 52px;
+	line-height: 59px;
+	margin: 0;
 }
-
 .content--h2 {
 	font-weight: 500;
 	font-size: 36px;
-line-height: 41px;
+	line-height: 41px;
 }
