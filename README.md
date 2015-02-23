@@ -1,4 +1,4 @@
-meewgumi.github.io
+megumi.me
 ================
 
-Github pages
+portfolio + tutorials
