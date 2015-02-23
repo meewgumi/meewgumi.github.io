@@ -4,28 +4,52 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 body {
     font-family: franklin-gothic-urw, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 400;
-    font-size: 100%;
-    line-height: 1rem;
+    line-height: 125%;
 }
 
 .header {
-	font-family: Karla-Regular;
+	font-family: 'Karla';
 	color: #FFFFFF;
 }
 
-.header__logo
+.header__logo {
+	
+}
 
-.header__nav  {
-font-size: 24px;
+.header__nav {
+	width: 80%;
+margin: 0 auto;
+}
+
+.header__links  {
+float: right;
+font-size: 18px;
 line-height: 28px;
+list-style-type: none;
+
+}
+
+.header__links li {
+	display: inline;
+}
+
+.header__links a {
+	text-decoration: none;
+	color: #ffffff;
 }
 
 .header__text {
-		text-align: center;
+	width: 80%;
+margin: 0 auto;
+	text-align: center;
+	clear: both;
+	padding: 8rem 0 0 0;
 }
 
 
@@ -33,40 +57,41 @@ line-height: 28px;
 font-family: franklin-gothic-urw;
 	font-weight: 400;
 font-size: 72px;
-line-height: 82px;
+line-height: 78px;
+		margin: 0 0 0 0;
 }
 
 .header--h2 {
 font-size: 32px;
 line-height: 37px;
-	text-align: center;
 }
 
 
-.header--background
+.header--background {
+	height: 25rem;
+	background-color: #6eb4b7;
+}
 
 .content {
 	font-family: franklin-gothic-urw;
 	font-weight: 400;
+	color: #030303;
 }
 
 
 .content__text {
 	font-size: 23px;
-color: #030303;
 line-height: 33px;
 }
 
 .content--h1 {
 	font-weight: 500;
 font-size: 52px;
-color: #030303;
 line-height: 59px;
 }
 
 .content--h2 {
 	font-weight: 500;
 	font-size: 36px;
-color: #030303;
 line-height: 41px;
 }
