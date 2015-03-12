@@ -133,13 +133,80 @@
         <p class="center">
             <img src="sketch-assets/monkey1.png" alt="Drag SVG to artboard" />
         </p>
-                                <p>With the icon selected, let's do a little investigation in the Layers menu on the left of your screen. This SVG is contained within the layer group called "noun_59767_cc". If you click the arrow to expand it, you will see three sublayers called Layer_1, Layer_2, and Layer_3.</p>
+                                <p>With the icon selected, let's do a little investigation in the Layers menu on the left of your screen. This SVG is contained within the layer group called "noun_59767_cc". If you click the arrow to expand it, you will see three sublayers called Layer_1, Layer_2, and Layer_3 as well as some text layers for artist credit.</p>
+                                                            
+        <p class="center">
+            <img src="sketch-assets/layers2.png" alt="Show all layers" />
+        </p>
+        <p>Since I've given credit to the artist in this tutorial, I'm removing the embedded text layers by hitting delete. When you use the work of others, make sure you always give credit or pay for the artwork when you download it.</p>
+        
         <p class="center">
             <img src="sketch-assets/layers1.png" alt="Opening up layers" />
         </p>
-
-
-
+                                <p>Now it's time to do some detective work. I always do this when importing vector files to clean up empty and unecessary layers. With Layer_1 and Layer_2 selected, notice that the layers are empty and can be deleted.</p>
+                                
+        <p class="center">
+            <img src="sketch-assets/monkey-empty-layers.png" alt="Delete empty layers" />
+        </p>
+   <p>If you expand Layer_3, you will see that this is where the core paths of the icon are.</p>
+        <p class="center">
+            <img src="sketch-assets/select-monkey.png" alt="Select monkey layers" />
+        </p>
+       <p>With these three layers selected, you can change the fill or the border color. I changed the fill to <strong>#90B8DC</strong>. Note: If you select the parent group, this won't work. You must select the individual layers in the group to change the colors!</p>
+       <p>Now you have a light blue monkey. To resize it, hold shift and move the cursor to the corner of the shape.</p>
+        <p class="center">
+            <img src="sketch-assets/change-fill.png" alt="Resize layers" />
+        </p>
+         <p>While holding down shift, drag the corner of the image until it is larger. Holding shift makes sure that the ratios of the image are consistent with the original scale.</p>
+                 <h2 class="content--h2">Working with Artboards</h2>
+<p>The next thing we're going to do is change the name of the artboard. Right now it says "Portrait - 5/5S/5C", but we want it to be less generic. If you double click the artboard name in the layers window, it will select the name and allow you to type in whatever you want. I typed "Banana Stand"</p>
+                <p class="center">
+            <img src="sketch-assets/change-layer-name.png" alt="Change artboard name" />
+        </p>
+        <p>Finally, I made a couple tweaks. I moved the text below the monkey. Then I centered everything using the align tools at the top of the inspector. Here is the result:</p>
+                        <p class="center">
+            <img src="sketch-assets/banana-stand-artboard.png" alt="Banana Stand Artboard example" />
+        </p>
+                <p>Now the exciting part starts! We can duplicate entire artboards very easily. Right click the artboard in the layers window and select "Duplicate". Or use shortcut &#8984; + D.</p>
+                        <p class="center">
+            <img src="sketch-assets/duplicate-artboard.png" alt="Duplicate artboard" />
+        </p>
+        <p>Sketch creates a duplicate to the right of your current artboard. I use this workflow when designing sequential screens needed to complete an action. Be sure to change your artboard names for each screen because this is the name Sketch will use when exporting your PNGs!</p>
+                               <h2 class="content--h2">Shared Styles and Text Styles</h2>
+                <p>Shared styles allow you to change styles on one layer and affect all the layers that share that style. To create one, let's start by selecting a blue rectangle from any artboard. If you look at the Inspector on the right side, you will see a dropdown that says "No Shared Style".</p>
+                        <p class="center">
+            <img src="sketch-assets/no-shared-style.png" alt="No Shared Style" />
+        </p>
+        <p>Select "Create new Shared Style" and name it. I named this one "Top Rectangle"</p>
+         <p class="center">
+            <img src="sketch-assets/top-rectangle.png" alt="Top Rectangle Shared Style" />
+        </p>
+        <p>Now select the other blue rectangle in the duplicated artboard and apply the "Top Rectangle" style.</p>
+                <p class="center">
+            <img src="sketch-assets/select-other-rectangle.png" alt="Select other rectangle" />
+        </p>
+        <p>Now, this part is important: make sure you have only one rectangle selected, not both. Edit the fill to <strong>#F5C923</strong>.</p>
+                        <p class="center">
+            <img src="sketch-assets/change-to-yellow.png" alt="Change color to yellow" />
+        </p>
+        <p>What you've done here is change the "Top Rectangle" style, which affects two rectangles in your project. And guess what? You can also do this with text styles.</p>
+                       <p class="center">
+            <img src="sketch-assets/text-style-create.png" alt="Create text style" />
+        </p>
+        <p>Select one of the lines of text and create a new text style. I named mine "Body Text".</p>
+                               <p class="center">
+            <img src="sketch-assets/body-text-style.png" alt="Create text style" />
+        </p>
+        <p>Important: select the text on the other artboard and apply style "Body Text". Now we can see some more Sketch magic happen. By selecting only one text layer and changing the font weight to bold...</p>
+                                       <p class="center">
+            <img src="sketch-assets/bold-text.png" alt="Change text style to bold" />
+        </p>
+        <p>Yep, you guessed it! Both lines of text will change to bold, even though you only selected one.</p>
+        <p>You probably see where this is going. We're going to make a third style for the sock monkey icon. To do this, you must select the three individual layers within the layer group, like this:</p>
+                                              <p class="center">
+            <img src="sketch-assets/sock-monkey-style.png" alt="Create sock monkey style" />
+        </p>
+        <p>This time, we're going to do something a little different. Change the color of the sock monkey before you apply the style to the second monkey!</p>
 
         <h1 class="content--h1  center  thin">Sketch makes product design super simple.</h1>
 
