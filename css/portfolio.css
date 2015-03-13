@@ -94,6 +94,12 @@ body {
     margin: 2rem auto;
     max-width: 100%;
 }
+.content__text a, .content__text a:visited, .content__text a:active {
+    color: #30b1b7;
+}
+.content__text a:hover, .content__text a:focus {
+    color: #309db7;
+}
 .content--h1 {
     font-weight: 600;
     font-size: 52px;
