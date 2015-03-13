@@ -70,7 +70,9 @@ body {
 }
 .header--background {
     height: 25rem;
-    background-color: #6eb4b7;
+/*    background-color: #6eb4b7;*/
+    background-image: url("../learn/sketch-assets/low-poly-texture-13.png");
+    background-size: cover;
 }
 
 /*Content Styles*/
