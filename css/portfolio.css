@@ -151,7 +151,8 @@ body {
 	}
 	.header--h2 {
 		font-size: 20px;
-		line-height: 90px;
+		line-height: 28px;
+		padding-top: 1rem;
 	}
 	.content--h2 {
 		margin: 3rem 0 .5rem 0;
