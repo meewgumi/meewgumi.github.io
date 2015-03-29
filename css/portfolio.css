@@ -20,6 +20,24 @@ body {
 .header {
     font-family: "Karla";
     color: #FFFFFF;
+    height: 25rem;
+    background-color: #18171c;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    z-index: 1;
+}
+.header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 25rem;
+    background-image: linear-gradient(0deg, #18171c, transparent);
+    opacity: .3;
+    z-index: -1;
 }
 .header__logo {
     width: 10rem;
@@ -69,26 +87,11 @@ body {
     line-height: 32px;
     font-weight: normal;
 }
-.header--background {
-    height: 25rem;
-    background-color: #18171c;
+.header--sketch1 {
     background-image: url("../learn/sketch-assets/Cyanea-capillata-4.jpg");
-    background-size: cover;
-    background-position: center top;
-    position: relative;
-    z-index: 1;
 }
-.header--background:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 25rem;
-    background-image: linear-gradient(0deg, #18171c, transparent);
-    opacity: .3;
-    z-index: -1;
+.header--sketch2 {
+    background-image: url("../learn/sketch-assets/Cyanea-capillata-9.jpg");
 }
 /*Content Styles*/
 
@@ -139,7 +142,8 @@ body {
         width: 90%;
         padding: 5rem 0 0 0;
     }
-    .header--background, .header--background:before {
+    .header--background,
+    .header--background:before {
         height: 23rem;
     }
     .header__nav {
