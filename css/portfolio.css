@@ -1,5 +1,4 @@
 /*Global Styles*/
-
 *,
 *:before,
 *:after {
@@ -15,8 +14,18 @@ body {
     font-weight: 400;
     line-height: 125%;
 }
-/*Header Styles*/
+.center {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}
+.thin {
+    width: 60%;
+    margin: 5rem auto;
+}
 
+/*Header Styles*/
 .header {
     font-family: "Karla";
     color: #FFFFFF;
@@ -135,8 +144,8 @@ body {
     line-height: 41px;
     margin: 5rem 0 .5rem 0;
 }
-/*Media Queries*/
 
+/*Media Queries*/
 @media (max-width: 1100px) {
     .header__text {
         width: 90%;
@@ -176,16 +185,4 @@ body {
     .content--h2 {
         margin: 3rem 0 .5rem 0;
     }
-}
-/*Modifications*/
-
-.center {
-    text-align: center;
-}
-.left {
-    text-align: left;
-}
-.thin {
-    width: 60%;
-    margin: 5rem auto;
 }
