@@ -13,13 +13,6 @@
     <link rel="icon" type="image/png" href="../img/mt.png">
     <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="../css/portfolio.css" />
-    <link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css' />
-    <script src="//use.typekit.net/qnd5wsu.js"></script>
-    <script>
-        try {
-            Typekit.load();
-        } catch (e) {}
-    </script>
 </head>
 
 <body>
@@ -50,42 +43,15 @@
 			</h2>
         </div>
     </header>
-    <div class="content  content__text">
-        <h2 class="content--h2">Why I'm writing this tutorial</h2>
-        <p>After scouring the internet, I could not find any Sketch tutorials for absolute beginners. Each tutorial on Google or <a href="http://www.designskilz.com/learn-sketch/" target="_blank" title="Learn Sketch 3 App">DesinSkilz</a> assumed some design background, and most were persuasive essays urging designers to switch from Photoshop. So I decided to make my own tutorial aimed towards a larger audience.</p>
-        <p>This tutorial will teach you how harness Sketch's power, whether you have background in design or not. Part 1 focuses on artboards and basic shape creation, <a href="/learn/sketch2.htm">Part 2</a> covers the power of layer styles, and Part 3 (in progress) will cover duplication and exporting. Let's get started!</p>
-        <h2 class="content--h2">Creating Artboards</h2>
-        <p>First, make sure you have <a href="http://bohemiancoding.com/sketch/" target="_blank" title="Sketch 3 by Bohemian Coding">Sketch 3</a> installed. Create a new document by clicking File > New. When you see the blank screen, look in the top left corner for the "Insert" menu. This menu contains all the tools you need to create new layers.</p>
-        <img src="sketch-assets/insert.png" alt="Insert new layer" />
-        <p>Start by creating an Artboard, which is like a canvas. The size that you select determines the final dimensions of the image you export.</p>
-        <img src="sketch-assets/artboard.png" alt="Artboard tool" />
-        <p>Once you select the Artboard tool, you can either draw an artboard freehand like this:</p>
-        <img src="sketch-assets/artboard-draw.png" alt="Drawing an artboard" />
-        <p>Or you can look at the Inspector column on the right side. As you can see, there are preset dimensions for several different device sizes. I've selected iPhone 5.</p>
-        <img src="sketch-assets/artboard-select.png" alt="Select artboard" />
-        <p>Note: If you need to resize an artboard, simply select its name and drag the white boxes that show up on the corners.</p>
-        <h1 class="content--h1  center  thin">Sketch makes product design super simple.</h1>
-        <p>What if you want to see the entire canvas? Let's try zooming out using the tool located on the top of the screen.</p>
-        <img src="sketch-assets/zoom.png" alt="Zoom out" />
-        <p>You can also do this by selecting View > Center Canvas or by using the shortcut &#8984; + 1</p>
-        <img src="sketch-assets/zoom-center.png" alt="Fit canvas to screen" />
-        <h2 class="content--h2">Adding shapes</h2>
-        <p>Now that your artboard is fully visible, let's add a rectangle to it. Located in Insert > Shape > Rectangle.</p>
-        <img src="sketch-assets/rectangle.png" alt="Rectangle tool" />
-        <p>I made a thin bar at the top of the artboard, like a navigation bar in mobile apps.</p>
-        <img src="sketch-assets/grey-rectangle.png" alt="Draw rectangle" />
-        <p>Next, locate the right side menu, officially called the "Inspector". There is a "Border" section here with a checkbox. Uncheck it to remove the default border.</p>
-        <img src="sketch-assets/border.png" alt="Remove border" />
-        <p>Let's also change the fill in the section right above the border. I used <strong>#104F8A</strong>. You can enter this number in the box below the eyedropper icon.</p>
-        <img src="sketch-assets/fills.png" alt="Change fill" />
-        <p>Notice that if you click the + sign at the bottom of the fill window, you can save this color swatch for later!</p>
-        <h1 class="content--h1  center  thin">Ready for more? Move on to <a href="sketch2.htm" title="Part 2: Text, alignment, and SVGs">Part 2</a></h1>
-    </div>
-    <footer class="footer">
-        <div class="footer__content">
-            <form action="https://tinyletter.com/megumitanaka" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/megumitanaka', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p class="footer--heading"><label for="tlemail">New tutorials straight to your inbox</label></p><p class="footer--form"><input type="text" class="footer--input" name="email" id="tlemail" placeholder="Your email address" /><input type="hidden" value="1" name="embed"/><input type="submit" class="footer--submit" value="Subscribe" /></p></form>
-        </div>
-    </footer>
+    
+    
+<?php
+/* Redirect browser */
+header("Location: http://megumi.co/learn/sketch.htm");
+/* Make sure that code below does not get executed when we redirect. */
+exit;
+?>
+    
     <!-- Scripts -->
      <script type="text/javascript">
         (function () {
