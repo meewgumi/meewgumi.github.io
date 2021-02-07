@@ -1,4 +1,4 @@
-megumi.me
+meewgumi.github.io
 ================
 
-portfolio + tutorials
+it's a github page now
