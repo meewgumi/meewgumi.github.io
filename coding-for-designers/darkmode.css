@@ -1,0 +1,31 @@
+/*
+References
+https://css-tricks.com/a-complete-guide-to-data-attributes/
+https://code.iamkate.com/html-and-css/styling-checkboxes-and-radio-buttons/
+https://www.w3schools.com/cssref/sel_before.asp
+https://html.spec.whatwg.org/multipage/input.html#radio-button-state-(type=radio)
+
+This style creates a pseudo background when the dark mode radio button is checked, since we cannot select body
+*/
+input[value="dark-mode"]:checked::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  z-index: -999;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/*
+Use the general sibling combinator combined with universal selector to style all elements that follow <input>
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
+*/
+input[value="dark-mode"]:checked~* {
+  color: white;
+}
