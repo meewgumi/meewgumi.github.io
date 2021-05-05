@@ -5,9 +5,9 @@ https://code.iamkate.com/html-and-css/styling-checkboxes-and-radio-buttons/
 https://www.w3schools.com/cssref/sel_before.asp
 https://html.spec.whatwg.org/multipage/input.html#radio-button-state-(type=radio)
 
-This style creates a pseudo background when the dark mode radio button is checked, since we cannot select body
+This style creates a background layer placed underneath the content when the dark mode radio button is checked, since we cannot select body
 */
-input[value="dark-mode"]:checked::before {
+input[value="dark-mode"]:checked~.background {
   content: "";
   background-color: black;
   position: absolute;
