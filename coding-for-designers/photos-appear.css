@@ -16,37 +16,13 @@ img {
   width: 130%;
   /* This hides images but their containers are still rendered */
   opacity: 0;
-  /* This is the measure of time the image stays on the screen */
-  transition: all 8s linear;
+  /* This is the measure of time the image stays on the screen, but it also affects the flash as the page first loads */
+  transition: all 1s linear;
 }
 
 /* This is the hover interaction. Define fade in transition. */
-img:hover {
+img:hover, img:focus {
   opacity: 1;
-  transition: all 1s ease-out;
+  transition: all .25s ease-out;
   z-index: 999;
-}
-
-/* This is a fix for the images being visible for 1s while loading */
-div.flash-fix {
-  background-color: white;
-  position: absolute;
-  z-index: 999;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  animation: 1s flash-fix forwards ease-in;
-  animation-iteration-count: 1;
-}
-
-@keyframes flash-fix {
-  100% {
-    opacity: 0;
-    display: none;
-    visibility: hidden;
-  }
 }
