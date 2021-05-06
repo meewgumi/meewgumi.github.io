@@ -1,0 +1,52 @@
+/* This creates a responsive masonry style image gallery. You cannot scroll up and down, so tweak the numbers until all images are visible.
+
+Sources:
+https://www.nicesnippets.com/snippet/full-responsive-pure-css-masonry-grid-gallery#home
+https://css-tricks.com/guide-responsive-friendly-css-columns/
+*/
+section {
+  columns: 6;
+  column-gap: 0em;
+  column-width: 8em;
+  overflow: hidden;
+}
+
+img {
+  /* This makes the images larger than the column so that they overlap */
+  width: 130%;
+  /* This hides images but their containers are still rendered */
+  opacity: 0;
+  /* This is the measure of time the image stays on the screen */
+  transition: all 8s linear;
+}
+
+/* This is the hover interaction. Define fade in transition. */
+img:hover {
+  opacity: 1;
+  transition: all 1s ease-out;
+  z-index: 999;
+}
+
+/* This is a fix for the images being visible for 1s while loading */
+div.flash-fix {
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  animation: 1s flash-fix forwards ease-in;
+  animation-iteration-count: 1;
+}
+
+@keyframes flash-fix {
+  100% {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
