@@ -8,15 +8,25 @@
 </head>
 
 <body>
-  <!-- Input must be an adjacent sibling to your main content and must be placed before your content -->
-  <input type="radio" name="theme-switcher" value="default" checked="true">
-  <input type="radio" name="theme-switcher" value="dark-mode">
-  <!-- Empty div for background as a fix for :checked:before not working in Firefox -->
+  <!-- Input must placed before main content. These are hidden with CSS. -->
+  <input type="radio" name="theme-switcher" id="default">
+  <input type="radio" name="theme-switcher" id="dark-mode">
+  <input type="radio" name="theme-switcher" id="blue">
+
+  <!-- Empty div for background as a fix for :checked:before not working in Firefox. This acts as the body background -->
   <div class="background"></div>
+
+  <!-- Main content -->
   <section>
     <h1>Dark Mode Button Demo</h1>
-    <p>By creating radio buttons and specifying their styles in CSS, we should be able to create a pure CSS theme switcher. Click the radio buttons above to switch back and forth.</p>
+    <p>By creating radio buttons and specifying their styles in CSS, we should be able to create a pure CSS theme switcher. Click the buttons below to switch back and forth.</p>
+    <p>Major credit goes to the <a href="https://www.w3.org/Style/CSS20/history.html" target="_blank">W3 CSS History page</a> for showing that <code>input</code> does not need to be a child of <code>label</code>.</p>
   </section>
+
+  <!-- Labels control input radio buttons. for= selects the ID of the input -->
+  <label for="default">Default</label>
+  <label for="dark-mode">Dark Mode</label>
+  <label for="blue">Blue</label>
 </body>
 
 </html>

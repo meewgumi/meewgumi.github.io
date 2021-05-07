@@ -1,13 +1,19 @@
-/*
-References
-https://css-tricks.com/a-complete-guide-to-data-attributes/
-https://code.iamkate.com/html-and-css/styling-checkboxes-and-radio-buttons/
-https://www.w3schools.com/cssref/sel_before.asp
-https://html.spec.whatwg.org/multipage/input.html#radio-button-state-(type=radio)
+/* General (Default) Styles here */
+:root {
+  font-size: 2em;
+}
 
-This style creates a background layer placed underneath the content when the dark mode radio button is checked, since we cannot select body
-*/
-input[value="dark-mode"]:checked~.background {
+a {
+  color: inherit;
+}
+
+/* Hide un-styleable radio buttons */
+input {
+  display: none;
+}
+
+/* Change background color when radio buttons are checked by selecting their IDs, then the empty div element and creating a pseudo background layer */
+#dark-mode:checked~.background {
   content: "";
   background-color: black;
   position: absolute;
@@ -22,10 +28,52 @@ input[value="dark-mode"]:checked~.background {
   bottom: 0;
 }
 
+#blue:checked~.background {
+  content: "";
+  background-color: blue;
+  position: absolute;
+  z-index: -999;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Revert background to original color when default is checked */
+#default:checked~.background {
+  background-color: inherit;
+}
+
 /*
 Use the general sibling combinator combined with universal selector to style all elements that follow <input>
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors
 */
-input[value="dark-mode"]:checked~* {
+#dark-mode:checked~* {
   color: white;
 }
+
+#blue:checked~* {
+  color: white;
+}
+
+/* Revert text color to original when default is checked. If you change other elements, you'll have to repeat your default styles here most likely */
+#default:checked~* {
+  color: inherit;
+}
+
+/* Style visible checkbox labels. You can also customize appearance for each theme by adding to the checkbox ID sections above */
+label {
+  border: 1px solid gray;
+}
+
+/*
+References
+https://css-tricks.com/a-complete-guide-to-data-attributes/
+https://code.iamkate.com/html-and-css/styling-checkboxes-and-radio-buttons/
+https://html.spec.whatwg.org/multipage/input.html#radio-button-state-(type=radio)
+https://www.w3.org/Style/CSS20/history.html
+*/
