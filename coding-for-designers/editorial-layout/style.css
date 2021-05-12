@@ -36,7 +36,6 @@
 
 /* Global */
 :root {
-  --primary-color: black;
   font-family: 'Lusitana';
   font-size: calc(1em + 1vw);
   -webkit-font-smoothing: antialiased;
@@ -141,16 +140,6 @@ h4 {
   font-style: italic;
   font-size: 0.8em;
   margin-top: 5px;
-}
-
-/* Article Links */
-section a {
-  transition: background 300ms ease 0s;
-  text-decoration: underline;
-}
-
-section a:hover {
-  background-color: lightyellow;
 }
 
 /* Bold = Small Caps */

@@ -1,0 +1,37 @@
+/* Font feature settings on https://wakamaifondue.com/, works with both variable and static fonts */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('SpaceGroteskVariable.woff2') format('woff2-variations');
+  font-weight: 300 700;
+}
+
+:root {
+  background-color: #cfe8b1;
+  font-family: 'Space Grotesk';
+  font-size: 150%;
+}
+
+body {
+  max-width: 35em;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 620;
+  font-feature-settings: "ss02";
+  /* font-feature-settings: "ss04"; */
+  /* font-feature-settings: "ss05"; */
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 400;
+}
+
+p {
+  /* font-feature-settings: "ss01"; */
+  /* font-variant-numeric: tabular-nums; */
+  /* font-variant-numeric: oldstyle-nums; */
+  line-height: 150%;
+  margin-top: 2em;
+}
