@@ -1,0 +1,250 @@
+/* Fonts */
+@font-face {
+  font-family: 'Lusitana';
+  src: url(fonts/lusitana-regular-otf-hinted-webfont.woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lusitana';
+  src: url(fonts/lusitana-italic-otf-hinted-webfont.woff2);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lusitana';
+  src: url(fonts/lusitana-medium-otf-hinted-webfont.woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lusitana';
+  src: url(fonts/lusitana-semibold-otf-hinted-webfont.woff2);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lusitana';
+  src: url(fonts/lusitana-bold-otf-hinted-webfont.woff2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Global */
+:root {
+  --primary-color: black;
+  font-family: 'Lusitana';
+  font-size: calc(1em + 1vw);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  margin: 0 2vw;
+}
+
+a {
+  color: inherit;
+}
+
+section {
+  max-width: 50ch;
+  width: 50vw;
+}
+
+/* Top Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  padding: 0.5em 0;
+  gap: 0.5em;
+}
+
+nav a:first-of-type {
+  flex-grow: 1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  border-top: 1px solid;
+  padding: 0.75em 0;
+  margin-top: 2rem;
+}
+
+/* Header Group */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid;
+  gap: 2rem;
+}
+
+hgroup {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+/* This crops the header image to maintain a standard height */
+header figure {
+  margin: 0;
+  overflow: hidden;
+  width: auto;
+  display: flex;
+  max-height: 90vh;
+  padding: 1rem 0;
+}
+
+header figure img {
+  object-fit: cover;
+}
+
+/* Headings */
+h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(1em + 7vw);
+  line-height: 0.9;
+  letter-spacing: -0.01em;
+  flex-grow: 1;
+  width: 60%;
+}
+
+h2 {
+  font-size: 1.167em;
+  font-weight: 398;
+}
+
+h3 {
+  font-weight: 700;
+  letter-spacing: 0.158em;
+  font-size: 25px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+/* Article Links */
+section a {
+  transition: background 300ms ease 0s;
+  text-decoration: underline;
+}
+
+section a:hover {
+  background-color: lightyellow;
+}
+
+/* Bold = Small Caps */
+strong, b {
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-kerning: normal;
+  font-size: 95%;
+  padding: 0 0.1em;
+}
+
+/* Paragraph Styling */
+p {
+  margin-bottom: 0;
+  text-align: justify;
+  text-justify: inter-word;
+  letter-spacing: -0.024em;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 142%;
+}
+
+p+p {
+  text-indent: 2em;
+  margin-top: 0
+}
+
+/* Space between sections */
+section+section {
+  margin-top: 3rem;
+}
+
+/* Blockquotes. More on smart quotes here: https://css-tricks.com/almanac/properties/q/quotes/ */
+blockquote {
+  font-style: italic;
+  font-size: 121%;
+  padding: 1rem 0;
+}
+
+blockquote::before {
+  content: "“";
+}
+
+blockquote::after {
+  content: "”";
+}
+
+/* Superscript styling */
+sup {
+  font-size: 49%;
+  letter-spacing: 0.169em;
+  font-weight: 700;
+  line-height: 100%;
+  position: relative;
+  top: -.4em;
+  padding-left: 0.2em;
+}
+
+/* Article Image Float */
+section figure {
+  float: right;
+  margin-right: -43vw;
+  width: 30vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+}
+
+section figcaption {
+  font-style: italic;
+  font-size: .8em;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+section figure img {
+  max-width: 100%;
+}
+
+/* Media Queries */
+@media (max-width:750px) {
+  section {
+    width: 100%;
+  }
+
+  section figure {
+    float: none;
+    width: 100%;
+    margin: 1.5em auto;
+    grid-template-columns: 1fr;
+  }
+
+  section figcaption {
+    text-align: center;
+  }
+}
