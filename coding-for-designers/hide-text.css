@@ -1,0 +1,40 @@
+/* Hide span when checkbox is checked */
+input:checked~section span {
+  display: none;
+}
+
+/* Clear extra paragraph padding when checkbox is checked */
+input:checked~section p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Display each link on its own line */
+input:checked~section a {
+  display: block;
+}
+
+/* Hide un-stylable checkbox element */
+input {
+  display: none;
+}
+
+/* Button styling */
+:root, h1 {
+  margin-top: 2em;
+}
+
+label {
+  border: 1px solid blue;
+  padding: 1em;
+  border-radius: 100%;
+}
+
+/* Since label element has no text in the html, add text with ::before */
+input~label::before {
+  content: "Less";
+}
+
+input:checked~label::before {
+  content: "More";
+}
