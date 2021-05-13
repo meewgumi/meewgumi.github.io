@@ -8,10 +8,32 @@
 </head>
 
 <body>
-  <!-- Main content -->
-  <a href="">
-    <!-- <h1>Hello World</h1> -->
-  </a>
+  <!-- Input must placed before main content. These are hidden with CSS. -->
+  <input type="radio" name="menu" id="closed">
+  <input type="radio" name="menu" id="open">
+
+  <!-- Hidden menu -->
+  <nav>
+    <label for="closed">Close</label>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Work</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main page content -->
+  <header>
+    <h1>Sliding Menu</h1>
+    <!-- Labels control input radio buttons. for= selects the ID of the input -->
+    <label for="open">Menu</label>
+  </header>
+  <section>
+    <p>By creating radio buttons and specifying their styles in CSS, we should be able to create a pure CSS sliding menu.</p>
+    <p>Well, it doesn't slide. It instantly appears. But it works!</p>
+  </section>
+
 
 </body>
 

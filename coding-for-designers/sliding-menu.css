@@ -1,0 +1,100 @@
+/* General (Default) Styles here */
+:root {
+  font-size: 1.25em;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+/* Hide un-styleable radio buttons */
+input {
+  display: none;
+}
+
+/* Style header */
+header {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+
+/* Hide open button when menu is open */
+#open:checked {
+  display: none;
+  visibility: hidden;
+}
+
+/* Hide nav when menu is closed */
+#closed:checked~nav {
+  display: none;
+}
+
+/* Nav styling */
+nav {
+  background-color: blue;
+  color: white;
+  width: 50vw;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  margin: 0;
+  padding: 2em;
+  top: 0;
+  z-index: 999;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 150%;
+  line-height: 250%;
+}
+
+/* Style the background overlay when menu is open */
+nav::before {
+  content: "";
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: -100vw;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: .9;
+}
+
+/* Style visible checkbox labels */
+label[for="closed"] {
+  text-align: right;
+  display: block;
+  font-size: 1em;
+  opacity: 0.5;
+  text-transform: lowercase;
+}
+
+label[for="open"] {
+  background-color: blue;
+  padding: .75em;
+  color: white;
+  border-radius: 1em;
+}
+
+label:hover {
+  cursor: pointer;
+  opacity: .8;
+  transition: all .5s ease;
+}
+
+/*
+References
+https://css-tricks.com/a-complete-guide-to-data-attributes/
+https://code.iamkate.com/html-and-css/styling-checkboxes-and-radio-buttons/
+https://html.spec.whatwg.org/multipage/input.html#radio-button-state-(type=radio)
+https://www.w3.org/Style/CSS20/history.html
+*/
