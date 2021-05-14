@@ -1,0 +1,61 @@
+/* Fonts */
+@font-face {
+  font-family: 'Lusitana';
+  src: url(fonts/lusitana-bold-otf-hinted-webfont.woff2);
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Global */
+:root {
+  background-color: black;
+  font-family: 'Lusitana', serif;
+  /* font-size: 10vw; */
+  font-size: calc(2em + 10vw);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+
+::selection {
+  background-color: black;
+}
+
+/* https://codeworkshop.dev/blog/2020-08-13-how-to-add-a-gradient-to-text-with-css/ */
+h1 {
+  text-transform: lowercase;
+  background: linear-gradient(#e05a90, #5442af, #429daf, #f3e144, #e6319b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: 3s line-squish infinite alternate;
+}
+
+h1:hover, h1:focus {
+  /* animation-play-state: paused; */
+  cursor: grab;
+}
+
+@keyframes line-squish {
+  0% {
+    line-height: 0;
+  }
+
+  100% {
+    line-height: 2;
+  }
+}
