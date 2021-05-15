@@ -1,3 +1,11 @@
+a::before {
+  content: "hi ";
+}
+
+a::after {
+  content: " :)";
+}
+
 /* Hide span when checkbox is checked */
 input:checked~section span {
   display: none;
@@ -31,10 +39,13 @@ label {
 }
 
 /* Since label element has no text in the html, add text with ::before */
-input~label::before {
+
+/* Unchecked */
+label::before {
   content: "Less";
 }
 
+/* Checked */
 input:checked~label::before {
   content: "More";
 }

@@ -7,7 +7,7 @@
 
 :root {
   background-color: #cfe8b1;
-  font-family: 'Space Grotesk';
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 150%;
 }
 
@@ -29,9 +29,9 @@ h1 {
 }
 
 p {
-  /* font-feature-settings: "ss01"; */
-  /* font-variant-numeric: tabular-nums; */
-  /* font-variant-numeric: oldstyle-nums; */
+  font-feature-settings: "ss01";
+  font-variant-numeric: tabular-nums;
+  font-variant-numeric: oldstyle-nums;
   line-height: 150%;
   margin-top: 2em;
 }

@@ -29,6 +29,7 @@ header {
 /* Hide nav when menu is closed */
 #closed:checked~nav {
   display: none;
+  visibility: hidden;
 }
 
 /* Nav styling */
@@ -42,7 +43,6 @@ nav {
   margin: 0;
   padding: 2em;
   top: 0;
-  z-index: 999;
 }
 
 nav ul {
@@ -65,7 +65,6 @@ nav::before {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 100;
   opacity: .9;
 }
 
@@ -83,6 +82,10 @@ label[for="open"] {
   padding: .75em;
   color: white;
   border-radius: 1em;
+}
+
+a[target="_blank"]::after {
+  content:"";
 }
 
 label:hover {

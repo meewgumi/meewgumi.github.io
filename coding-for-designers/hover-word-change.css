@@ -40,7 +40,3 @@ Emoji reference: https://css-tricks.com/emoji-toggles/
 a:hover::before {
   content: "Hello W\01F30Frld";
 }
-
-a:active::before {
-  content: "Hell\01F30F World";
-}

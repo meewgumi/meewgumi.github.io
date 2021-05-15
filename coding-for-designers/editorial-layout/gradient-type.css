@@ -9,7 +9,7 @@
 /* Global */
 :root {
   background-color: black;
-  font-family: 'Lusitana', serif;
+  font-family: 'Lusitana', 'Georgia', serif;
   /* font-size: 10vw; */
   font-size: calc(2em + 10vw);
   -webkit-font-smoothing: antialiased;

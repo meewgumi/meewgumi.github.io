@@ -1,0 +1,10 @@
+blockquote {
+  float: right;
+  border: 1px solid red;
+}
+
+.left {
+  float: left;
+width: 50vw;
+border: 1px solid red;
+}
