@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Coconat';
+  src: url('../fonts/Coconat-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
 /* Global */
 :root {
   font-family: 'Coconat';
@@ -5,6 +12,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  --gradient-fade: linear-gradient(transparent 80%, antiquewhite 100%);
+  --gradient-1: radial-gradient(40% 40% at top left, #f69d3c, transparent);
+  --gradient-2: radial-gradient(40% 40%, #6E6FCC, transparent);
+  --gradient-3: radial-gradient(40% 40% at bottom right, #17EE87, transparent);
+  --gradient-4: radial-gradient(40% 40% at center right, #17B4EE, transparent);
+  --gradient-5: radial-gradient(40% 40% at center left, #E781A9, transparent);
+  --gradient-6: radial-gradient(40% 40% at top right, #F9E91D, transparent);
+  --mask-1: radial-gradient(30% 20% at 25% 50%, black, transparent);
+  --mask-2: radial-gradient(40% 40% at bottom right, black, transparent);
+  --mask-3: radial-gradient(10% 15% at 18% 42%, black, transparent);
+  --mask-4: var(--gradient-4);
+  --mask-5: radial-gradient(50% 40% at 20% 20%, black, transparent);
+  --mask-6: var(--gradient-6);
+  --mask-set: var(--mask-1), var(--mask-2), var(--mask-3), var(--mask-4), var(--mask-5), var(--mask-6);
 }
 
 body {
@@ -14,26 +35,32 @@ body {
 }
 
 .gradient {
-  --gradient-fade: linear-gradient(transparent 80%, antiquewhite 100%);
-  --gradient-1: radial-gradient(40% 40% at top left, #f69d3c, transparent);
-  --gradient-2: radial-gradient(40% 40%, #6E6FCC, transparent);
-  --gradient-3: radial-gradient(40% 40% at bottom right, #17EE87, transparent);
-  --gradient-4: radial-gradient(40% 40% at center right, #17B4EE, transparent);
-  --gradient-5: radial-gradient(40% 40% at center left, #E781A9, transparent);
-  --gradient-6: radial-gradient(40% 40% at top right, #F9E91D, transparent);
-  --mask-1: radial-gradient(50% 40% at top center, rgb(0, 0, 1), transparent);
-  --mask-2: radial-gradient(40% 40% at bottom right, rgb(0, 0, 1), transparent);
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   z-index: -1;
-  position: absolute;
+  position: fixed;
   top: 0;
   background-image: var(--gradient-fade), var(--gradient-1), var(--gradient-2), var(--gradient-3), var(--gradient-4), var(--gradient-5), var(--gradient-6);
-  /* mask-image: var(--mask-1), var(--mask-2);
-  -webkit-mask-image: var(--mask-1), var(--mask-2); */
+  mask-image: var(--mask-set);
+  -webkit-mask-image: var(--mask-set);
+  animation: 15s mask-move infinite alternate ease-in-out;
 }
 
-/* Mask as animation keyframes? */
+.mask-demo {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  /* background-image: var(--mask-set); */
+}
+
+/* Mask as animation keyframes */
+@keyframes mask-move {
+  100% {
+    transform: scale(1.5, .8) translate(0, -15vh);
+  }
+}
 
 nav, footer, hgroup, section {
   padding: 1em;
@@ -136,6 +163,7 @@ strong, b {
 
 /* Paragraph Styling */
 p {
+  /* font-family: 'Standard'; */
   margin-bottom: 0;
   text-align: justify;
   text-justify: inter-word;
