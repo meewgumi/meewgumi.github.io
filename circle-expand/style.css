@@ -44,7 +44,6 @@ body {
   padding: 0;
   background-color: var(--background-color);
   color: var(--text-color);
-  overflow: hidden;
 }
 
 /* Circle */
