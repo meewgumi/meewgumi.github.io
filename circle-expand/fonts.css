@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Syne';
+  src: url('../fonts/Syne-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Syne';
+  src: url('../fonts/Syne-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Syne';
+  src: url('../fonts/Syne-Extra.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Syne Mono';
+  src: url('../fonts/Syne-Mono.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GlyphWorld Forest';
+  src: url('../fonts/GlyphWorld/GlyphWorld-Forest.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GlyphWorld Desert';
+  src: url('../fonts/GlyphWorld/GlyphWorld-Desert.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GlyphWorld Flower';
+  src: url('../fonts/GlyphWorld/GlyphWorld-Flower.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GlyphWorld Meadow';
+  src: url('../fonts/GlyphWorld/GlyphWorld-Meadow.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'GlyphWorld Airland';
+  src: url('../fonts/GlyphWorld/GlyphWorld-AirLand.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'GlyphWorld Glacier';
+  src: url('../fonts/GlyphWorld/GlyphWorld-Glacier.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'GlyphWorld Mountain';
+  src: url('../fonts/GlyphWorld/GlyphWorld-Mountain.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'GlyphWorld Wasteland';
+  src: url('../fonts/GlyphWorld/GlyphWorld-WasteLand.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'GlyphWorld AnimalSoul';
+  src: url('../fonts/GlyphWorld/GlyphWorld-AnimalSoul.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
