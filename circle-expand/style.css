@@ -67,6 +67,23 @@ hgroup {
   -webkit-animation: 2s slide-in ease-out;
 }
 
+.transparent-text hgroup {
+  animation: none;
+}
+
+.transparent-text {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  color: transparent;
+  background-color: transparent;
+}
+
+.transparent-text * {
+  color: transparent;
+  background-color: transparent !important;
+}
+
 /* Circle */
 .circle-container {
   display: flex;
