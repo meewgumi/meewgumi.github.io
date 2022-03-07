@@ -1,0 +1,325 @@
+@font-face {
+    font-family: "Avara";
+    src: url(../fonts/Avara-Bold_Italic_web.woff2);
+    font-weight: 700;
+    font-style: italic;
+}
+
+:root {
+    font-family: "Avara";
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: justify;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+body {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+div.circle1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background: black;
+    float: right;
+    shape-outside: circle(37%);
+    margin: 3rem;
+    margin-right: 0;
+}
+
+hr {
+    border: 1px solid black;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+    /* all headings centered */
+    clear: both;
+    font-weight: normal;
+}
+
+p {
+    margin-top: .51em;
+    text-align: justify;
+    margin-bottom: .49em;
+}
+
+hr {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 33.5%;
+    margin-right: 33.5%;
+    clear: both;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.left {
+    text-align: left;
+    padding-left: .5em;
+}
+
+td.right {
+    text-align: right;
+    padding-left: .5em;
+}
+
+td.center {
+    text-align: center;
+}
+
+td.vertb {
+    vertical-align: bottom;
+}
+
+.padl1 {
+    padding-left: 1em;
+}
+
+.padr1 {
+    padding-right: 1em;
+}
+
+.pagenum {
+    /* uncomment the next line for invisible page numbers */
+    /*  visibility: hidden;  */
+    position: absolute;
+    left: 92%;
+    font-size: .8em;
+    text-align: right;
+}
+
+/* page numbers */
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.smcap {
+    font-variant: small-caps;
+}
+
+.u {
+    text-decoration: underline;
+}
+
+.gesperrt {
+    letter-spacing: 0.2em;
+    margin-right: -0.2em;
+}
+
+.caption {
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: .7em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.caption2 {
+    padding-right: 1em;
+    padding-left: 1em;
+    font-size: .7em;
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+/* Images */
+
+.figcenter {
+    margin: auto;
+    text-align: center;
+}
+
+.dropcap {
+    float: left;
+    font-size: 4.5em;
+    font-weight: normal;
+    margin-right: 3px;
+    padding-bottom: 0px;
+    line-height: .8em;
+}
+
+@media handheld {
+    .dropcap {
+        float: left;
+        font-size: 1em;
+        margin-right:
+            1px;
+        padding-bottom: 0px;
+        line-height: .9em;
+    }
+}
+
+.dropcap2 {
+    float: left;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-right: 3px;
+    padding-bottom: 0px;
+    line-height: .8em;
+}
+
+@media handheld {
+    .dropcap2 {
+        float: left;
+        font-size: 1em;
+        font-weight: normal;
+        margin-right: 1px;
+        padding-bottom: 0px;
+        line-height: .8em;
+    }
+}
+
+.figleft200 {
+    float: left;
+    clear: left;
+    margin-left: 0;
+    margin-bottom:
+        1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 0;
+    text-align:
+        center;
+}
+
+@media handheld {
+    .figleft200 {
+        width: 200px;
+        float: left;
+        clear: left;
+        margin-left: 0;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        margin-right: 1em;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.figleft400 {
+    float: left;
+    clear: left;
+    margin-left: 0;
+    margin-bottom:
+        1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 0;
+    text-align:
+        center;
+}
+
+@media handheld {
+    .figleft400 {
+        width: 200px;
+        float: left;
+        clear: left;
+        margin-left: 0;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        margin-right: 1em;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.figright200 {
+    float: right;
+    clear: left;
+    margin-left: 1em;
+    margin-bottom:
+        1em;
+    margin-top: 1em;
+    margin-right: 0em;
+    padding: 0;
+    text-align:
+        center;
+}
+
+@media handheld {
+    .figright200 {
+        width: 200px;
+        float: right;
+        clear: left;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        margin-right: 0em;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.figright250 {
+    float: right;
+    clear: left;
+    margin-left: 1em;
+    margin-bottom:
+        1em;
+    margin-top: 1em;
+    margin-right: 0em;
+    padding: 0;
+    text-align:
+        center;
+}
+
+@media handheld {
+    .figright250 {
+        width: 250px;
+        float: right;
+        clear: left;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        margin-right: 0em;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.vh {
+    visibility: hidden;
+}
+
+/* Footnotes */
+
+.footnote {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.9em;
+}
+
+.footnote .label {
+    position: absolute;
+    right: 84%;
+    text-align: right;
+}
+
+.fnanchor {
+    vertical-align: super;
+    font-size: .8em;
+    text-decoration:
+        none;
+}

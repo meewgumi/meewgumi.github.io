@@ -1,22 +1,331 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="artofthebook.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
     <title>
         The Project Gutenberg eBook of The Art of the Book, by Charles Holme, Editor.
     </title>
+    <link rel="coverpage" href="https://www.gutenberg.org/files/45968/45968-h/images/cover.jpg">
+    <style type="text/css">
+        @font-face {
+            font-family: "Avara";
+            src: url(../fonts/Avara-Bold_Italic_web.woff2);
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        :root {
+            font-family: "Avara";
+            font-style: italic;
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        body {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            text-align: center;
+            /* all headings centered */
+            clear: both;
+            font-weight: normal;
+        }
+
+        p {
+            margin-top: .51em;
+            text-align: justify;
+            margin-bottom: .49em;
+        }
+
+        hr {
+            width: 33%;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            margin-left: 33.5%;
+            margin-right: 33.5%;
+            clear: both;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        td.left {
+            text-align: left;
+            padding-left: .5em;
+        }
+
+        td.right {
+            text-align: right;
+            padding-left: .5em;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        td.vertb {
+            vertical-align: bottom;
+        }
+
+        .padl1 {
+            padding-left: 1em;
+        }
+
+        .padr1 {
+            padding-right: 1em;
+        }
+
+        .pagenum {
+            /* uncomment the next line for invisible page numbers */
+            /*  visibility: hidden;  */
+            position: absolute;
+            left: 92%;
+            font-size: .8em;
+            text-align: right;
+        }
+
+        /* page numbers */
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .smcap {
+            font-variant: small-caps;
+        }
+
+        .u {
+            text-decoration: underline;
+        }
+
+        .gesperrt {
+            letter-spacing: 0.2em;
+            margin-right: -0.2em;
+        }
+
+        .caption {
+            padding-right: 1em;
+            padding-left: 1em;
+            font-size: .7em;
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .caption2 {
+            padding-right: 1em;
+            padding-left: 1em;
+            font-size: .7em;
+            text-align: center;
+            margin-bottom: 0em;
+        }
+
+        /* Images */
+
+        .figcenter {
+            margin: auto;
+            text-align: center;
+        }
+
+        .dropcap {
+            float: left;
+            font-size: 4.5em;
+            font-weight: normal;
+            margin-right: 3px;
+            padding-bottom: 0px;
+            line-height: .8em;
+        }
+
+        @media handheld {
+            .dropcap {
+                float: left;
+                font-size: 1em;
+                margin-right:
+                    1px;
+                padding-bottom: 0px;
+                line-height: .9em;
+            }
+        }
+
+        .dropcap2 {
+            float: left;
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-right: 3px;
+            padding-bottom: 0px;
+            line-height: .8em;
+        }
+
+        @media handheld {
+            .dropcap2 {
+                float: left;
+                font-size: 1em;
+                font-weight: normal;
+                margin-right: 1px;
+                padding-bottom: 0px;
+                line-height: .8em;
+            }
+        }
+
+        .figleft200 {
+            float: left;
+            clear: left;
+            margin-left: 0;
+            margin-bottom:
+                1em;
+            margin-top: 1em;
+            margin-right: 1em;
+            padding: 0;
+            text-align:
+                center;
+        }
+
+        @media handheld {
+            .figleft200 {
+                width: 200px;
+                float: left;
+                clear: left;
+                margin-left: 0;
+                margin-bottom: 1em;
+                margin-top: 1em;
+                margin-right: 1em;
+                padding: 0;
+                text-align: center;
+            }
+        }
+
+        .figleft400 {
+            float: left;
+            clear: left;
+            margin-left: 0;
+            margin-bottom:
+                1em;
+            margin-top: 1em;
+            margin-right: 1em;
+            padding: 0;
+            text-align:
+                center;
+        }
+
+        @media handheld {
+            .figleft400 {
+                width: 200px;
+                float: left;
+                clear: left;
+                margin-left: 0;
+                margin-bottom: 1em;
+                margin-top: 1em;
+                margin-right: 1em;
+                padding: 0;
+                text-align: center;
+            }
+        }
+
+        .figright200 {
+            float: right;
+            clear: left;
+            margin-left: 1em;
+            margin-bottom:
+                1em;
+            margin-top: 1em;
+            margin-right: 0em;
+            padding: 0;
+            text-align:
+                center;
+        }
+
+        @media handheld {
+            .figright200 {
+                width: 200px;
+                float: right;
+                clear: left;
+                margin-left: 1em;
+                margin-bottom: 1em;
+                margin-top: 1em;
+                margin-right: 0em;
+                padding: 0;
+                text-align: center;
+            }
+        }
+
+        .figright250 {
+            float: right;
+            clear: left;
+            margin-left: 1em;
+            margin-bottom:
+                1em;
+            margin-top: 1em;
+            margin-right: 0em;
+            padding: 0;
+            text-align:
+                center;
+        }
+
+        @media handheld {
+            .figright250 {
+                width: 250px;
+                float: right;
+                clear: left;
+                margin-left: 1em;
+                margin-bottom: 1em;
+                margin-top: 1em;
+                margin-right: 0em;
+                padding: 0;
+                text-align: center;
+            }
+        }
+
+        .vh {
+            visibility: hidden;
+        }
+
+        /* Footnotes */
+
+        .footnote {
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 0.9em;
+        }
+
+        .footnote .label {
+            position: absolute;
+            right: 84%;
+            text-align: right;
+        }
+
+        .fnanchor {
+            vertical-align: super;
+            font-size: .8em;
+            text-decoration:
+                none;
+        }
+    </style>
 
 </head>
 
 <body>
+
     <p class="center">THE ART OF THE BOOK</p>
 
     <h1>
         <small>THE ART OF</small><br>
         THE BOOK</h1>
+
     <p class="center">
         A<span class="vh">Xi</span>REVIEW<span class="vh">Xi</span>OF<span class="vh">Xi</span>SOME<br>
         RECENT<span class="vh">XXee</span>EUROPEAN<br>
@@ -34,7 +343,7 @@
     <hr>
 
     <h2>PREFATORY NOTE</h2>
-    <div class="circle1"></div>
+
     <p><span class="dropcap">T</span>HE Editor desires to express his thanks to the following who have
         kindly assisted in the preparation of this volume:—to the Trustees of
         the Kelmscott Press for permission to reproduce the pages printed in
