@@ -1,18 +1,4 @@
 @font-face {
-  font-family: "Avara";
-  src: url(../fonts/Avara-Bold_web.woff2);
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Avara";
-  src: url(../fonts/Avara-Bold_Italic_web.woff2);
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
   font-family: "Dauphine";
   src: url(../fonts/Dauphine\ Regular.ttf);
   font-weight: 400;
@@ -20,11 +6,11 @@
 }
 
 :root {
-  font-family: "Avara";
-  font-style: italic;
+  font-family: "Dauphine";
+  font-style: normal;
   font-size: 32px;
   font-weight: 700;
-  text-align: center;
+  text-align: left;
 }
 
 body {
