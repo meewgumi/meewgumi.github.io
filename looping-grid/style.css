@@ -1,0 +1,38 @@
+:root {
+    background-color: black;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 3em;
+    row-gap: 1em;
+}
+
+/* 1st Image in loop */
+img:nth-of-type(4n+1) {
+    grid-column-start: 4;
+    grid-column-end: 10;
+}
+
+/* 2nd Image in loop */
+img:nth-of-type(4n+2) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+/* 3rd Image in loop */
+img:nth-of-type(4n+3) {
+    grid-column-start: 3;
+    grid-column-end: 13;
+}
+
+/* 4th Image in loop */
+img:nth-of-type(4n) {
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
