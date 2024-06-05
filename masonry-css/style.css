@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(224, 224, 224);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+}
+
+aside {
+    max-width: 800px;
+}
+
+section {
+  columns: 6;
+  column-width: 256px;
+  column-gap: 10px;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
