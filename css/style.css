@@ -1,22 +1,25 @@
 @font-face {
-  font-family: "Dauphine";
-  src: url(../fonts/Dauphine\ Regular.ttf);
+  font-family: "Authentic";
+  src: url(../fonts/Authentic/AUTHENTICSans-Condensed-90.woff2);
   font-weight: 400;
   font-style: normal;
 }
 
-:root {
-  font-family: "Dauphine";
+body {
+  /* max-width: 800px; */
+  /* margin: 0 auto; */
+  padding: 1rem;
+  font-family: "Authentic";
   font-style: normal;
   font-size: 32px;
   font-weight: 700;
-  text-align: left;
+  /* text-align: left; */
+  color: #1c2027;
+  background-color: gainsboro;
 }
 
-body {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
+a {
+  color: inherit;
 }
 
 ul,
