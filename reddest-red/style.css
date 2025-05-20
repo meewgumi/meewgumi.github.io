@@ -1,0 +1,57 @@
+body {
+    font-family: Arial;
+}
+
+.code-container {
+    display: grid;
+    position: relative;
+    gap: 10px;
+}
+
+@supports (background-color: color(display-p3 1 0 0)) {
+    .p3-supported-yes {
+        display: inline-block;
+    }
+
+    .p3-supported-no {
+        display: none;
+    }
+}
+
+.red-box {
+    /* position: absolute; */
+    top: 0;
+    width: 200px;
+    height: 100px;
+    color: white;
+    padding: 5px;
+}
+
+.rgb {
+    --red-color: rgb(255, 0, 0);
+}
+
+.hex {
+    --red-color: #FF0000;
+}
+
+.p3 {
+    --red-color: color(display-p3 1 0 0);
+}
+
+.red-box {
+    background-color: var(--red-color);
+}
+
+.red-text {
+    color: var(--red-color);
+    font-weight: bold;
+    font-size: 72px;
+    letter-spacing: -0.05em;
+}
+
+.svg-container {
+    position: relative;
+}
+
+

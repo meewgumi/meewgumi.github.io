@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Reddest Red</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+
+    <body>
+        <h1>The Reddest Red</h1>
+        <p>An investigation into why the color red (#FF0000) shows up differently on Figma vs. code. It all has to do with color spaces.</p>
+        <p>Does your browser support wide gamut display P3 colors? <b class="p3-supported-yes">YES</b><b class="p3-supported-no">NO</b>.</p>
+        <p>Note that even if your browser supports P3 colors, your monitor might not. If you can't see a difference, try using your laptop instead.</p>
+        <section class="text-container">
+            <div class="red-text rgb">RED RGB</div>
+            <div class="red-text hex">RED HEX</div>
+            <div class="red-text p3">RED P3</div>
+        </section>
+        <section class="code-container">
+            <div class="red-box rgb">rgb(255, 0, 0)</div>
+            <div class="red-box hex">#FF0000</div>
+            <div class="red-box p3">color(display-p3 1 0 0)</div>
+        </section>
+        <section>
+            <p>For more info, check out <a href="https://caniuse.com/css-color-function" target="_blank">Caniuse</a> and <a href="https://dev.to/ingosteinke/generate-p3-color-variations-from-rgb-hex-values-3fgo" target="_blank">this dev.to article</a></a>.</p>
+        </section>
+    </body>
+
+</html>
