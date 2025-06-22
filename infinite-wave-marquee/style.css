@@ -1,82 +1,116 @@
+/* Font import */
 @font-face {
-    font-family: 'Glyphworld Flower';
-    src: url('../fonts/Syne-Regular.woff2') format('woff2');
-    font-style: normal;
-    font-weight: 400;
-  }
+	font-family: "Instrument Serif";
+	src: url("../fonts/InstrumentSerif-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
 
+/* Change these variables */
 :root {
-    --wave-color: #b9e8b6;
-    --background-color: rgb(69, 143, 85);
+	--wave-color: #c9ebc6;
+	--background-color: #9cd8a9;
 }
 
+/* Global Styling */
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Glyphworld Flower';
-    margin: 0;
-    padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: "Instrument Serif";
+	margin: 0;
+	padding: 0;
+	background-color: var(--background-color);
 }
 
+a {
+	color: inherit;
+}
+
+/* Wave containers */
 section.container {
-    background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0;
-    width: 200vw;
+	background-color: var(--background-color);
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0;
+	width: 100vw;
+	overflow-x: hidden;
 }
 
-.wave-top {
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    justify-content: space-around;
-    flex-shrink: 0;
-}
-
+.wave-top,
 .wave-bottom {
-    display: flex;
-    overflow: hidden;
-    user-select: none;
+	display: flex;
+	overflow: hidden;
+	user-select: none;
+	pointer-events: none; /* block pointer interactions */
+	width: 200vw;
 }
 
+/* Actual waves */
 .wave {
-    background-image: url(bg-tile.png);
-    background-repeat: round;
-    height: 100px;
-    animation: scroll 13s infinite forwards linear;
-    width: 100vw;
+	width: 100vw;
+	margin-left: -1px; /* cover up subpixel gap */
 }
 
-.wave-bottom .wave {
-    animation: none;
-    rotate: 180deg;
-    animation: scroll-reverse 13s infinite forwards linear;
+.wave svg {
+	width: 100%; /* Makes the SVG take up 100% of its parent's width */
+	height: auto; /* Maintains the SVG's aspect ratio based on its viewBox */
+	display: block; /* Ensures it behaves like a block-level element, preventing extra space */
+	fill: var(--wave-color);
 }
 
-.content {
-    background-color: var(--wave-color);
-    min-height: 50vh;
-    display: flex;
-    place-content: center;
-    align-items: center;
-    flex-direction: column;
+
+
+/* Top animation - right to left */
+.wave-top .wave {
+	animation: scroll 13s infinite forwards linear;
 }
 
 @keyframes scroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
 
-  @keyframes scroll-reverse {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(100%);
-    }
-  }
+/* Bottom animation - left to right */
+.wave-bottom .wave {
+	rotate: 180deg;
+	animation: scroll-reverse 13s infinite forwards linear;
+}
+
+@keyframes scroll-reverse {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+/* Text Styling */
+.content {
+	background-color: var(--wave-color);
+	min-height: 50vh;
+	display: flex;
+	place-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: -1px; /* cover up subpixel gap */
+	margin-bottom: -1px; /* cover up subpixel gap */
+	text-align: center;
+	padding: 20px;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 64px;
+	letter-spacing: -0.02em;
+	line-height: 100%;
+}
+
+p {
+	font-size: 32px;
+	letter-spacing: -0.01em;
+}
