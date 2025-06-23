@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Are.na Mentions</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                line-height: 1.6;
+            }
+
+            h1 {
+                color: #333;
+            }
+
+            .result {
+                margin-bottom: 20px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+
+            .result h2 {
+                margin-top: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Are.na Mentions</h1>
+        <div id="results"></div>
+
+        <script>
+            // Replace with your name and website
+            const YOUR_NAME = "Megumi Tanaka";
+            const YOUR_WEBSITE = "megumi.co";
+
+            // Are.na API endpoint for searching channels
+            const API_URL = "https://api.are.na/v2/search/channels";
+
+            async function searchArena(query) {
+                try {
+                    const response = await fetch(`${API_URL}?q=${encodeURIComponent(query)}`);
+                    const data = await response.json();
+                    return data;
+                } catch (error) {
+                    console.error("Error fetching data:", error);
+                    return null;
+                }
+            }
+
+            async function checkMentions() {
+                const resultsDiv = document.getElementById('results');
+
+                // Search for your name
+                const nameResults = await searchArena(YOUR_NAME);
+                displayResults(nameResults, `Mentions of "${YOUR_NAME}"`);
+
+                // Search for your website
+                const websiteResults = await searchArena(YOUR_WEBSITE);
+                displayResults(websiteResults, `Mentions of "${YOUR_WEBSITE}"`);
+            }
+
+            function displayResults(data, title) {
+                const resultsDiv = document.getElementById('results');
+                const resultSection = document.createElement('div');
+                resultSection.className = 'result';
+                resultSection.innerHTML = `<h2>${title}</h2>`;
+
+                if (data && data.channels && data.channels.length > 0) {
+                    const list = document.createElement('ul');
+                    data.channels.forEach(channel => {
+                        const item = document.createElement('li');
+                        item.innerHTML = `<a href="${channel.url}" target="_blank">${channel.title}</a>`;
+                        list.appendChild(item);
+                    });
+                    resultSection.appendChild(list);
+                } else {
+                    resultSection.innerHTML += '<p>No results found.</p>';
+                }
+
+                resultsDiv.appendChild(resultSection);
+            }
+
+            // Run the search when the page loads
+            window.onload = checkMentions;
+        </script>
+    </body>
+
+</html>
