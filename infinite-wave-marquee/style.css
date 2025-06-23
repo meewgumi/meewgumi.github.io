@@ -1,0 +1,115 @@
+/* Font import */
+@font-face {
+	font-family: "Instrument Serif";
+	src: url("../fonts/InstrumentSerif-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 400;
+}
+
+/* Change these variables */
+:root {
+	--wave-color: #c9ebc6;
+	--background-color: #9cd8a9;
+}
+
+/* Global Styling */
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: "Instrument Serif";
+	margin: 0;
+	padding: 0;
+	background-color: var(--background-color);
+}
+
+a {
+	color: inherit;
+}
+
+/* Wave containers */
+section.container {
+	background-color: var(--background-color);
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.wave-top,
+.wave-bottom {
+	display: flex;
+	overflow: hidden;
+	user-select: none;
+	pointer-events: none; /* block pointer interactions */
+	width: 200vw;
+}
+
+/* Actual waves */
+.wave {
+	width: 100vw;
+	margin-left: -1px; /* cover up subpixel gap */
+}
+
+.wave svg {
+	width: 100%; /* Makes the SVG take up 100% of its parent's width */
+	height: auto; /* Maintains the SVG's aspect ratio based on its viewBox */
+	display: block; /* Ensures it behaves like a block-level element, preventing extra space */
+	fill: var(--wave-color);
+}
+
+
+
+/* Top animation - right to left */
+.wave-top .wave {
+	animation: scroll 13s infinite forwards linear;
+}
+
+@keyframes scroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+/* Bottom animation - left to right */
+.wave-bottom .wave {
+	rotate: 180deg;
+	animation: scroll-reverse 13s infinite forwards linear;
+}
+
+@keyframes scroll-reverse {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+/* Text Styling */
+.content {
+	background-color: var(--wave-color);
+	display: flex;
+	place-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: -1px; /* cover up subpixel gap */
+	margin-bottom: -1px; /* cover up subpixel gap */
+	text-align: center;
+	padding: 20px;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: calc(4vw + 2em);
+	letter-spacing: -0.02em;
+	line-height: 100%;
+}
+
+p {
+	font-size: calc(1vw + 1em);
+	letter-spacing: -0.01em;
+}
